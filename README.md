@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![UiTM](images/uitm.png)
+
 
 **A comprehensive web-based system for managing class/lecture exemption applications at Universiti Teknologi MARA (UiTM)**
 
@@ -40,17 +40,17 @@ The project was developed by a **two-person team** with specialized roles:
 
 
 #### **Muhammad Ilyas Bin Amran** - Lead Developer & System Analyst
-- 📝 Converted requirements into comprehensive technical documentation
-- 🎨 Single-handedly designed complete system architecture and UI/UX
-- 💻 Solo implementation of entire codebase (**4.5 months**)
-- 📐 Created all technical diagrams (Flowchart, Use Case, ERD, DFD)
-- 🏗️ Developed combined SRS and SDD documentation
+- Converted requirements into comprehensive technical documentation
+- Single-handedly designed complete system architecture and UI/UX
+- Solo implementation of entire codebase (**4.5 months**)
+- Created all technical diagrams (Flowchart, Use Case, ERD, DFD)
+- Developed combined SRS and SDD documentation
 
 #### **Ahmad Musta'in Billah bin Mustafa** - Client Liaison & Requirements Specialist
-- 🗣️ Primary contact with Academic Affairs Department
-- 📊 Led sprint-by-sprint client collaboration sessions
-- 🤝 Conducted requirement elicitation meetings
-- 📞 Maintained continuous stakeholder communication
+- Primary contact with Academic Affairs Department
+- Led sprint-by-sprint client collaboration sessions
+- Conducted requirement elicitation meetings
+- Maintained continuous stakeholder communication
 
 ### 📅 Development Timeline
 
@@ -92,12 +92,12 @@ The project was developed by a **two-person team** with specialized roles:
 - System-wide reports and configuration
 
 ### 🎨 General Features
-- 🔐 Secure role-based access control
-- 📱 Responsive design (mobile-friendly)
-- 🌐 Bilingual support (English/Bahasa Malaysia)
-- 📧 Automated email notifications (PHPMailer)
-- 🖨️ PDF generation for official documents
-- 📊 DataTables for efficient data browsing
+- Secure role-based access control
+- Responsive design (mobile-friendly)
+- Bilingual support (English/Bahasa Malaysia)
+- Automated email notifications (PHPMailer)
+- PDF generation for official documents
+- DataTables for efficient data browsing
 
 ---
 
@@ -110,7 +110,7 @@ Student Application → Lecturer Authorization → KPP Validation → TRHEA Appr
     Email Notify          Email Notify          Email Notify     Email Notify
 ```
 
-### User Roles
+### 👥 User Roles
 1. **Student** - Submit and track applications
 2. **Lecturer** - Authorize class-specific requests
 3. **KPP (Program Coordinator)** - Validate and support applications
@@ -145,12 +145,12 @@ Student Application → Lecturer Authorization → KPP Validation → TRHEA Appr
 
 ## ⚙️ Installation
 
-### Prerequisites
+### 📋 Prerequisites
 - XAMPP (Apache, MySQL, PHP 7.4+)
 - Composer (for PHPMailer)
 - Modern web browser
 
-### Quick Setup
+### ⚡ Quick Setup
 
 1. **Clone/Download Project**
 ```bash
@@ -185,20 +185,20 @@ cd ..
 http://localhost/eleas.uitm.edu.my
 ```
 
-### Environment Configuration
+### 🔐 Environment Configuration
 
 Your `.env` file contains:
 - **Database**: localhost, eleas_v3, root (no password)
 - **Email**: Gmail SMTP with app password
 - **App Settings**: Development mode with debugging enabled
 
-**🔒 Security Note**: For production, change `APP_ENV=production` and `APP_DEBUG=false` in `.env`
+**Security Note**: For production, change `APP_ENV=production` and `APP_DEBUG=false` in `.env`
 
 ---
 
 ## 📊 Database Schema
 
-### Main Tables
+### 🗄️ Main Tables
 - `students` - Student information
 - `applications` - Exemption applications
 - `classes` - Class/lecture details per application
@@ -212,7 +212,7 @@ Your `.env` file contains:
 
 ## 🎨 Design Documentation
 
-This project includes comprehensive design documentation:
+### 📐 Documentation Created
 
 - **Flowcharts** - Process flows for all user roles
 - **Use Case Diagrams** - Actor interactions and system boundaries
@@ -224,17 +224,17 @@ This project includes comprehensive design documentation:
 
 ## 🔧 Quick Troubleshooting
 
-### Database Connection Error?
+### ❌ Database Connection Error?
 - Check MySQL is running in XAMPP
 - Verify database `eleas_v3` exists
 - Check `.env` has correct credentials
 
-### Email Not Sending?
+### ❌ Email Not Sending?
 - Verify Gmail app password in `.env`
 - Check internet connection
 - Ensure port 587 is not blocked
 
-### Can't Login?
+### ❌ Can't Login?
 - Clear browser cache/cookies
 - Verify account exists in database
 
@@ -247,29 +247,29 @@ This project includes comprehensive design documentation:
 <td align="center" width="50%">
 <h3>Muhammad Ilyas Bin Amran</h3>
 <em>Lead Developer & System Analyst</em><br><br>
-📝 Requirements documentation<br>
-🎨 UI/UX design and architecture<br>
-💻 Full-stack implementation (4.5 months)<br>
-📐 Technical diagrams creator<br>
-📚 SRS + SDD documentation<br><br>
-💼 <a href="https://www.linkedin.com/in/muhammad-ilyas-bin-amran/">LinkedIn</a><br>
-💻 <a href="https://github.com/unatesta175">GitHub: unatesta175</a><br>
-📧 muhammadilyasamran@gmail.com<br>
-📱 +60 11-1104 7614
+Requirements documentation<br>
+UI/UX design and architecture<br>
+Full-stack implementation (4.5 months)<br>
+Technical diagrams creator<br>
+SRS + SDD documentation<br><br>
+<strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/muhammad-ilyas-bin-amran/">Muhammad Ilyas Bin Amran</a><br>
+<strong>GitHub:</strong> <a href="https://github.com/unatesta175">unatesta175</a><br>
+<strong>Email:</strong> muhammadilyasamran@gmail.com<br>
+<strong>WhatsApp:</strong> +60 11-1104 7614
 </td>
 <td align="center" width="50%">
 <h3>Ahmad Musta'in Billah bin Mustafa</h3>
 <em>Client Liaison & Requirements Specialist</em><br><br>
-🗣️ Primary client communicator<br>
-📊 Sprint facilitator<br>
-🤝 Stakeholder relationship management<br>
-✅ Requirements validation<br><br>
+Primary client communicator<br>
+Sprint facilitator<br>
+Stakeholder relationship management<br>
+Requirements validation<br><br>
 <em>Collaborated with Academic Affairs Department (Hal Ehwal Akademik) throughout the project</em>
 </td>
 </tr>
 </table>
 
-### Collaboration Model
+### 🤝 Collaboration Model
 
 Our **specialized dual-role model**:
 - **Internal Transformation** (Ilyas): Technical specifications and implementation
@@ -291,7 +291,7 @@ Our **specialized dual-role model**:
 - For continuous collaboration and domain expertise
 - For patience during iterative requirement refinement
 
-### 👨‍🏫 Special Thanks
+### 🙏 Special Thanks
 - Academic supervisors for technical guidance
 - Department staff for testing and feedback
 - UiTM for facilitating this impactful project
@@ -300,11 +300,13 @@ Our **specialized dual-role model**:
 
 ## 📝 License
 
+### 📄 Usage Rights
+
 This project was developed as part of an **internship program** at Universiti Teknologi MARA (UiTM).
 
-- ✅ **Academic Use**: Free for educational purposes
-- ✅ **UiTM Use**: Fully authorized for deployment by UiTM
-- ⚠️ **Commercial Use**: Requires permission from development team and UiTM
+- **Academic Use**: Free for educational purposes
+- **UiTM Use**: Fully authorized for deployment by UiTM
+- **Commercial Use**: Requires permission from development team and UiTM
 
 **Disclaimer**: This software is provided "as is", without warranty of any kind.
 
@@ -318,10 +320,10 @@ This project was developed as part of an **internship program** at Universiti Te
 
 For questions, suggestions, or collaboration opportunities:
 
-- 💼 **LinkedIn**: [Muhammad Ilyas Bin Amran](https://www.linkedin.com/in/muhammad-ilyas-bin-amran/)
-- 💻 **GitHub**: [unatesta175](https://github.com/unatesta175)
-- 📧 **Email**: muhammadilyasamran@gmail.com
-- 📱 **WhatsApp**: +60 11-1104 7614
+- **LinkedIn**: [Muhammad Ilyas Bin Amran](https://www.linkedin.com/in/muhammad-ilyas-bin-amran/)
+- **GitHub**: [unatesta175](https://github.com/unatesta175)
+- **Email**: muhammadilyasamran@gmail.com
+- **WhatsApp**: +60 11-1104 7614
 
 ### 🏛️ For Academic/Official Inquiries
 
@@ -344,7 +346,7 @@ This project represents **4.5 months of intensive development**, countless hours
 
 **Developed with ❤️ for UiTM Academic Community**
 
-![UiTM](images/logoS.png)
+
 
 **© 2024 ELEAS Development Team | Universiti Teknologi MARA**
 
