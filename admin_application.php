@@ -302,12 +302,56 @@ font-size: 35%;
                                                                 }
                                                                 ?>
                                                          <?php echo'</td>';?>
-                                                        <?php echo
-                                                        '<td>' . $authorization_status_app . '</td>
-                                                                <td>' . $support_status . '</td>
-                                                                
-                                                                <td>' . $application_stat . '</td>	
-                                                                   <td>
+                                                        <td>
+                                                            <?php
+                                                            // Authorization status badge
+                                                            $auth = strtolower(trim($authorization_status_app));
+                                                            if ($auth === 'dibenarkan' || $auth === 'diluluskan' || $auth === 'lulus' || $auth === 'approved') {
+                                                                echo '<span class="badge bg-success">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                            } elseif ($auth === 'tidak dibenarkan' || $auth === 'tidakdibenarkan' || $auth === 'tidak' || $auth === 'rejected') {
+                                                                echo '<span class="badge bg-danger">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                            } elseif ($auth === 'pending' || $auth === 'menunggu') {
+                                                                echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                            } else {
+                                                                echo '<span class="badge bg-secondary">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                            }
+                                                            ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php
+                                                            // Support status badge
+                                                            $ss = strtolower(trim($support_status));
+                                                            if ($ss === 'diluluskan' || $ss === 'lulus' || $ss === 'luluskan' || $ss === 'approved') {
+                                                                echo '<span class="badge bg-success">' . htmlspecialchars($support_status) . '</span>';
+                                                            } elseif ($ss === 'tidak diluluskan' || $ss === 'tidak_diluluskan' || $ss === 'tidakdiluluskan' || $ss === 'tidak' || $ss === 'rejected') {
+                                                                echo '<span class="badge bg-danger">' . htmlspecialchars($support_status) . '</span>';
+                                                            } elseif ($ss === 'pending' || $ss === 'menunggu') {
+                                                                echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($support_status) . '</span>';
+                                                            } else {
+                                                                echo '<span class="badge bg-secondary">' . htmlspecialchars($support_status) . '</span>';
+                                                            }
+                                                            ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php
+                                                            // Application status badge
+                                                            $app_stat = strtolower(trim($application_stat));
+                                                            if ($app_stat === 'diluluskan' || $app_stat === 'lulus' || $app_stat === 'approved' || $app_stat === 'selesai' || $app_stat === 'completed') {
+                                                                echo '<span class="badge bg-success">' . htmlspecialchars($application_stat) . '</span>';
+                                                            } elseif ($app_stat === 'tidak diluluskan' || $app_stat === 'tidak_diluluskan' || $app_stat === 'tidakdiluluskan' || $app_stat === 'ditolak' || $app_stat === 'rejected' || $app_stat === 'tidak') {
+                                                                echo '<span class="badge bg-danger">' . htmlspecialchars($application_stat) . '</span>';
+                                                            } elseif ($app_stat === 'pending' || $app_stat === 'menunggu' || $app_stat === 'dalam proses' || $app_stat === 'in process' || $app_stat === 'aktif') {
+                                                                echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                            } elseif ($app_stat === 'dalam semakan' || $app_stat === 'under review' || $app_stat === 'sedang disemak') {
+                                                                echo '<span class="badge bg-info text-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                            } elseif ($app_stat === 'tamat tempoh' || $app_stat === 'expired') {
+                                                                echo '<span class="badge bg-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                            } else {
+                                                                echo '<span class="badge bg-secondary">' . htmlspecialchars($application_stat) . '</span>';
+                                                            }
+                                                            ?>
+                                                        </td>
+                                                        <?php echo '<td>
     
                                                            <div style="display: flex; justify-content: flex-start; flex-wrap: wrap;"><center>
                                                            <a class=" option-btn text-light btn me-1 underline" href="admin_application_view.php?application_id=' . $application_id . '" 
@@ -450,12 +494,56 @@ font-size: 35%;
                                                                     }
                                                                     ?>
                                                              <?php echo'</td>';?>
-                                                            <?php echo
-                                                            '<td>' . $authorization_status_app . '</td>
-                                                                    <td>' . $support_status . '</td>
-                                                                    
-                                                                    <td>' . $application_stat . '</td>	
-                                                                       <td>
+                                                            <td>
+                                                                <?php
+                                                                // Authorization status badge
+                                                                $auth = strtolower(trim($authorization_status_app));
+                                                                if ($auth === 'dibenarkan' || $auth === 'diluluskan' || $auth === 'lulus' || $auth === 'approved') {
+                                                                    echo '<span class="badge bg-success">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                                } elseif ($auth === 'tidak dibenarkan' || $auth === 'tidakdibenarkan' || $auth === 'tidak' || $auth === 'rejected') {
+                                                                    echo '<span class="badge bg-danger">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                                } elseif ($auth === 'pending' || $auth === 'menunggu') {
+                                                                    echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                                } else {
+                                                                    echo '<span class="badge bg-secondary">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                                }
+                                                                ?>
+                                                            </td>
+                                                            <td>
+                                                                <?php
+                                                                // Support status badge
+                                                                $ss = strtolower(trim($support_status));
+                                                                if ($ss === 'diluluskan' || $ss === 'lulus' || $ss === 'luluskan' || $ss === 'approved') {
+                                                                    echo '<span class="badge bg-success">' . htmlspecialchars($support_status) . '</span>';
+                                                                } elseif ($ss === 'tidak diluluskan' || $ss === 'tidak_diluluskan' || $ss === 'tidakdiluluskan' || $ss === 'tidak' || $ss === 'rejected') {
+                                                                    echo '<span class="badge bg-danger">' . htmlspecialchars($support_status) . '</span>';
+                                                                } elseif ($ss === 'pending' || $ss === 'menunggu') {
+                                                                    echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($support_status) . '</span>';
+                                                                } else {
+                                                                    echo '<span class="badge bg-secondary">' . htmlspecialchars($support_status) . '</span>';
+                                                                }
+                                                                ?>
+                                                            </td>
+                                                            <td>
+                                                                <?php
+                                                                // Application status badge
+                                                                $app_stat = strtolower(trim($application_stat));
+                                                                if ($app_stat === 'diluluskan' || $app_stat === 'lulus' || $app_stat === 'approved' || $app_stat === 'selesai' || $app_stat === 'completed') {
+                                                                    echo '<span class="badge bg-success">' . htmlspecialchars($application_stat) . '</span>';
+                                                                } elseif ($app_stat === 'tidak diluluskan' || $app_stat === 'tidak_diluluskan' || $app_stat === 'tidakdiluluskan' || $app_stat === 'ditolak' || $app_stat === 'rejected' || $app_stat === 'tidak') {
+                                                                    echo '<span class="badge bg-danger">' . htmlspecialchars($application_stat) . '</span>';
+                                                                } elseif ($app_stat === 'pending' || $app_stat === 'menunggu' || $app_stat === 'dalam proses' || $app_stat === 'in process' || $app_stat === 'aktif') {
+                                                                    echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                                } elseif ($app_stat === 'dalam semakan' || $app_stat === 'under review' || $app_stat === 'sedang disemak') {
+                                                                    echo '<span class="badge bg-info text-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                                } elseif ($app_stat === 'tamat tempoh' || $app_stat === 'expired') {
+                                                                    echo '<span class="badge bg-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                                } else {
+                                                                    echo '<span class="badge bg-secondary">' . htmlspecialchars($application_stat) . '</span>';
+                                                                }
+                                                                ?>
+                                                            </td>
+                                                            <?php echo '<td>
         
                                                                <div style="display: flex; justify-content: flex-start; flex-wrap: wrap;"><center>
                                                                <a class=" option-btn text-light btn me-1 underline" href="admin_application_view.php?application_id=' . $application_id . '" 
@@ -622,12 +710,56 @@ font-size: 35%;
                                                                         }
                                                                         ?>
                                                                  <?php echo'</td>';?>
-                                                                <?php echo
-                                                                '<td>' . $authorization_status_app . '</td>
-                                                                        <td>' . $support_status . '</td>
-                                                                        
-                                                                        <td>' . $application_stat . '</td>	
-                                                                           <td>
+                                                                <td>
+                                                                    <?php
+                                                                    // Authorization status badge
+                                                                    $auth = strtolower(trim($authorization_status_app));
+                                                                    if ($auth === 'dibenarkan' || $auth === 'diluluskan' || $auth === 'lulus' || $auth === 'approved') {
+                                                                        echo '<span class="badge bg-success">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                                    } elseif ($auth === 'tidak dibenarkan' || $auth === 'tidakdibenarkan' || $auth === 'tidak' || $auth === 'rejected') {
+                                                                        echo '<span class="badge bg-danger">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                                    } elseif ($auth === 'pending' || $auth === 'menunggu') {
+                                                                        echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                                    } else {
+                                                                        echo '<span class="badge bg-secondary">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                                    }
+                                                                    ?>
+                                                                </td>
+                                                                <td>
+                                                                    <?php
+                                                                    // Support status badge
+                                                                    $ss = strtolower(trim($support_status));
+                                                                    if ($ss === 'diluluskan' || $ss === 'lulus' || $ss === 'luluskan' || $ss === 'approved') {
+                                                                        echo '<span class="badge bg-success">' . htmlspecialchars($support_status) . '</span>';
+                                                                    } elseif ($ss === 'tidak diluluskan' || $ss === 'tidak_diluluskan' || $ss === 'tidakdiluluskan' || $ss === 'tidak' || $ss === 'rejected') {
+                                                                        echo '<span class="badge bg-danger">' . htmlspecialchars($support_status) . '</span>';
+                                                                    } elseif ($ss === 'pending' || $ss === 'menunggu') {
+                                                                        echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($support_status) . '</span>';
+                                                                    } else {
+                                                                        echo '<span class="badge bg-secondary">' . htmlspecialchars($support_status) . '</span>';
+                                                                    }
+                                                                    ?>
+                                                                </td>
+                                                                <td>
+                                                                    <?php
+                                                                    // Application status badge
+                                                                    $app_stat = strtolower(trim($application_stat));
+                                                                    if ($app_stat === 'diluluskan' || $app_stat === 'lulus' || $app_stat === 'approved' || $app_stat === 'selesai' || $app_stat === 'completed') {
+                                                                        echo '<span class="badge bg-success">' . htmlspecialchars($application_stat) . '</span>';
+                                                                    } elseif ($app_stat === 'tidak diluluskan' || $app_stat === 'tidak_diluluskan' || $app_stat === 'tidakdiluluskan' || $app_stat === 'ditolak' || $app_stat === 'rejected' || $app_stat === 'tidak') {
+                                                                        echo '<span class="badge bg-danger">' . htmlspecialchars($application_stat) . '</span>';
+                                                                    } elseif ($app_stat === 'pending' || $app_stat === 'menunggu' || $app_stat === 'dalam proses' || $app_stat === 'in process' || $app_stat === 'aktif') {
+                                                                        echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                                    } elseif ($app_stat === 'dalam semakan' || $app_stat === 'under review' || $app_stat === 'sedang disemak') {
+                                                                        echo '<span class="badge bg-info text-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                                    } elseif ($app_stat === 'tamat tempoh' || $app_stat === 'expired') {
+                                                                        echo '<span class="badge bg-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                                    } else {
+                                                                        echo '<span class="badge bg-secondary">' . htmlspecialchars($application_stat) . '</span>';
+                                                                    }
+                                                                    ?>
+                                                                </td>
+                                                                <?php echo '<td>
             
                                                                    <div style="display: flex; justify-content: flex-start; flex-wrap: wrap;"><center>
                                                                    <a class=" option-btn text-light btn me-1 underline" href="admin_application_view.php?application_id=' . $application_id . '" 
@@ -762,12 +894,56 @@ font-size: 35%;
                                                                     }
                                                                     ?>
                                                              <?php echo'</td>';?>
-                                                            <?php echo
-                                                            '<td>' . $authorization_status_app . '</td>
-                                                                    <td>' . $support_status . '</td>
-                                                                    
-                                                                    <td>' . $application_stat . '</td>	
-                                                                       <td>
+                                                            <td>
+                                                                <?php
+                                                                // Authorization status badge
+                                                                $auth = strtolower(trim($authorization_status_app));
+                                                                if ($auth === 'dibenarkan' || $auth === 'diluluskan' || $auth === 'lulus' || $auth === 'approved') {
+                                                                    echo '<span class="badge bg-success">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                                } elseif ($auth === 'tidak dibenarkan' || $auth === 'tidakdibenarkan' || $auth === 'tidak' || $auth === 'rejected') {
+                                                                    echo '<span class="badge bg-danger">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                                } elseif ($auth === 'pending' || $auth === 'menunggu') {
+                                                                    echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                                } else {
+                                                                    echo '<span class="badge bg-secondary">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                                }
+                                                                ?>
+                                                            </td>
+                                                            <td>
+                                                                <?php
+                                                                // Support status badge
+                                                                $ss = strtolower(trim($support_status));
+                                                                if ($ss === 'diluluskan' || $ss === 'lulus' || $ss === 'luluskan' || $ss === 'approved') {
+                                                                    echo '<span class="badge bg-success">' . htmlspecialchars($support_status) . '</span>';
+                                                                } elseif ($ss === 'tidak diluluskan' || $ss === 'tidak_diluluskan' || $ss === 'tidakdiluluskan' || $ss === 'tidak' || $ss === 'rejected') {
+                                                                    echo '<span class="badge bg-danger">' . htmlspecialchars($support_status) . '</span>';
+                                                                } elseif ($ss === 'pending' || $ss === 'menunggu') {
+                                                                    echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($support_status) . '</span>';
+                                                                } else {
+                                                                    echo '<span class="badge bg-secondary">' . htmlspecialchars($support_status) . '</span>';
+                                                                }
+                                                                ?>
+                                                            </td>
+                                                            <td>
+                                                                <?php
+                                                                // Application status badge
+                                                                $app_stat = strtolower(trim($application_stat));
+                                                                if ($app_stat === 'diluluskan' || $app_stat === 'lulus' || $app_stat === 'approved' || $app_stat === 'selesai' || $app_stat === 'completed') {
+                                                                    echo '<span class="badge bg-success">' . htmlspecialchars($application_stat) . '</span>';
+                                                                } elseif ($app_stat === 'tidak diluluskan' || $app_stat === 'tidak_diluluskan' || $app_stat === 'tidakdiluluskan' || $app_stat === 'ditolak' || $app_stat === 'rejected' || $app_stat === 'tidak') {
+                                                                    echo '<span class="badge bg-danger">' . htmlspecialchars($application_stat) . '</span>';
+                                                                } elseif ($app_stat === 'pending' || $app_stat === 'menunggu' || $app_stat === 'dalam proses' || $app_stat === 'in process' || $app_stat === 'aktif') {
+                                                                    echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                                } elseif ($app_stat === 'dalam semakan' || $app_stat === 'under review' || $app_stat === 'sedang disemak') {
+                                                                    echo '<span class="badge bg-info text-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                                } elseif ($app_stat === 'tamat tempoh' || $app_stat === 'expired') {
+                                                                    echo '<span class="badge bg-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                                } else {
+                                                                    echo '<span class="badge bg-secondary">' . htmlspecialchars($application_stat) . '</span>';
+                                                                }
+                                                                ?>
+                                                            </td>
+                                                            <?php echo '<td>
         
                                                                <div style="display: flex; justify-content: flex-start; flex-wrap: wrap;"><center>
                                                                <a class=" option-btn text-light btn me-1 underline" href="admin_application_view.php?application_id=' . $application_id . '" 
@@ -917,12 +1093,56 @@ font-size: 35%;
                                                                     }
                                                                     ?>
                                                              <?php echo'</td>';?>
-                                                            <?php echo
-                                                            '<td>' . $authorization_status_app . '</td>
-                                                                    <td>' . $support_status . '</td>
-                                                                    
-                                                                    <td>' . $application_stat . '</td>	
-                                                                       <td>
+                                                            <td>
+                                                                <?php
+                                                                // Authorization status badge
+                                                                $auth = strtolower(trim($authorization_status_app));
+                                                                if ($auth === 'dibenarkan' || $auth === 'diluluskan' || $auth === 'lulus' || $auth === 'approved') {
+                                                                    echo '<span class="badge bg-success">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                                } elseif ($auth === 'tidak dibenarkan' || $auth === 'tidakdibenarkan' || $auth === 'tidak' || $auth === 'rejected') {
+                                                                    echo '<span class="badge bg-danger">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                                } elseif ($auth === 'pending' || $auth === 'menunggu') {
+                                                                    echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                                } else {
+                                                                    echo '<span class="badge bg-secondary">' . htmlspecialchars($authorization_status_app) . '</span>';
+                                                                }
+                                                                ?>
+                                                            </td>
+                                                            <td>
+                                                                <?php
+                                                                // Support status badge
+                                                                $ss = strtolower(trim($support_status));
+                                                                if ($ss === 'diluluskan' || $ss === 'lulus' || $ss === 'luluskan' || $ss === 'approved') {
+                                                                    echo '<span class="badge bg-success">' . htmlspecialchars($support_status) . '</span>';
+                                                                } elseif ($ss === 'tidak diluluskan' || $ss === 'tidak_diluluskan' || $ss === 'tidakdiluluskan' || $ss === 'tidak' || $ss === 'rejected') {
+                                                                    echo '<span class="badge bg-danger">' . htmlspecialchars($support_status) . '</span>';
+                                                                } elseif ($ss === 'pending' || $ss === 'menunggu') {
+                                                                    echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($support_status) . '</span>';
+                                                                } else {
+                                                                    echo '<span class="badge bg-secondary">' . htmlspecialchars($support_status) . '</span>';
+                                                                }
+                                                                ?>
+                                                            </td>
+                                                            <td>
+                                                                <?php
+                                                                // Application status badge
+                                                                $app_stat = strtolower(trim($application_stat));
+                                                                if ($app_stat === 'diluluskan' || $app_stat === 'lulus' || $app_stat === 'approved' || $app_stat === 'selesai' || $app_stat === 'completed') {
+                                                                    echo '<span class="badge bg-success">' . htmlspecialchars($application_stat) . '</span>';
+                                                                } elseif ($app_stat === 'tidak diluluskan' || $app_stat === 'tidak_diluluskan' || $app_stat === 'tidakdiluluskan' || $app_stat === 'ditolak' || $app_stat === 'rejected' || $app_stat === 'tidak') {
+                                                                    echo '<span class="badge bg-danger">' . htmlspecialchars($application_stat) . '</span>';
+                                                                } elseif ($app_stat === 'pending' || $app_stat === 'menunggu' || $app_stat === 'dalam proses' || $app_stat === 'in process' || $app_stat === 'aktif') {
+                                                                    echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                                } elseif ($app_stat === 'dalam semakan' || $app_stat === 'under review' || $app_stat === 'sedang disemak') {
+                                                                    echo '<span class="badge bg-info text-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                                } elseif ($app_stat === 'tamat tempoh' || $app_stat === 'expired') {
+                                                                    echo '<span class="badge bg-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                                } else {
+                                                                    echo '<span class="badge bg-secondary">' . htmlspecialchars($application_stat) . '</span>';
+                                                                }
+                                                                ?>
+                                                            </td>
+                                                            <?php echo '<td>
         
                                                                <div style="display: flex; justify-content: flex-start; flex-wrap: wrap;"><center>
                                                                <a class=" option-btn text-light btn me-1 underline" href="admin_application_view.php?application_id=' . $application_id . '" 

@@ -297,14 +297,27 @@ $no=1;
                                                 }
                                                 ?>
                                          <?php echo'</td>';?>
-                                        <?php echo
-                                        '<td>' . $support_status . '</td>
+                                        <?php echo '<td>';
+                                        
+                                        // Support status badge
+                                        $ss = strtolower(trim($support_status));
+                                        if ($ss === 'diluluskan' || $ss === 'lulus' || $ss === 'luluskan' || $ss === 'approved') {
+                                            echo '<span class="badge bg-success">' . htmlspecialchars($support_status) . '</span>';
+                                        } elseif ($ss === 'tidak diluluskan' || $ss === 'tidak_diluluskan' || $ss === 'tidakdiluluskan' || $ss === 'tidak' || $ss === 'rejected') {
+                                            echo '<span class="badge bg-danger">' . htmlspecialchars($support_status) . '</span>';
+                                        } elseif ($ss === 'pending' || $ss === 'menunggu') {
+                                            echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($support_status) . '</span>';
+                                        } else {
+                                            echo '<span class="badge bg-secondary">' . htmlspecialchars($support_status) . '</span>';
+                                        }
+                                        
+                                        echo '</td>';
 
                                         	
-                                        <td>' . $date_supported . '</td>
+                                        echo '<td>' . $date_supported . '</td>';
 
                                         
-                                        <td> <div style="display: flex; justify-content: flex-start; flex-wrap: wrap;">
+                                        echo '<td> <div style="display: flex; justify-content: flex-start; flex-wrap: wrap;">
 
                                                            
                                                                 <input id="btnLogin" type="submit" style=" text-transform: uppercase;border-radius: 15px; font-size: 14px; padding: 5px 10px; display: flex; align-items: center; justify-content: center; height: 30px; width: 100%;" value="Luluskan" class="green-btn text-light btn me-1 underline"
@@ -315,9 +328,9 @@ $no=1;
                                                          
 
 </div>
-                                                    </div></td>
+                                                    </div></td>';
                                           
-                                        </tr>';
+                                        echo '</tr>';
                                                             $no++;
                                                         }
                                                     }

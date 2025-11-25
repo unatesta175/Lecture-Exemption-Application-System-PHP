@@ -300,7 +300,22 @@ if (isset($_SESSION['user_id'])) {
                                                     <tr>
                                                         <td>Status Permohonan</td>
                                                         <td>
-                                                            <?php echo ':&nbsp;&nbsp;' . $application_stat; ?>
+                                                            <?php 
+                                                            echo ':&nbsp;&nbsp;';
+                                                            // Application status badge
+                                                            $app_stat = strtolower(trim($application_stat));
+                                                            if ($app_stat === 'diluluskan' || $app_stat === 'lulus' || $app_stat === 'approved' || $app_stat === 'selesai' || $app_stat === 'completed') {
+                                                                echo '<span class="badge bg-success">' . htmlspecialchars($application_stat) . '</span>';
+                                                            } elseif ($app_stat === 'tidak diluluskan' || $app_stat === 'tidak_diluluskan' || $app_stat === 'tidakdiluluskan' || $app_stat === 'ditolak' || $app_stat === 'rejected' || $app_stat === 'tidak') {
+                                                                echo '<span class="badge bg-danger">' . htmlspecialchars($application_stat) . '</span>';
+                                                            } elseif ($app_stat === 'pending' || $app_stat === 'menunggu' || $app_stat === 'dalam proses' || $app_stat === 'in process') {
+                                                                echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                            } elseif ($app_stat === 'dalam semakan' || $app_stat === 'under review' || $app_stat === 'sedang disemak') {
+                                                                echo '<span class="badge bg-info text-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                            } else {
+                                                                echo '<span class="badge bg-secondary">' . htmlspecialchars($application_stat) . '</span>';
+                                                            }
+                                                            ?>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -354,7 +369,20 @@ if (isset($_SESSION['user_id'])) {
                                             <tr>
                                                 <td>Status Kebenaran</td>
                                                 <td>
-                                                    <?php echo ':&nbsp;&nbsp;' . $authorization_status ; ?>
+                                                    <?php 
+                                                    echo ':&nbsp;&nbsp;';
+                                                    // Authorization status badge
+                                                    $auth = strtolower(trim($authorization_status));
+                                                    if ($auth === 'dibenarkan' || $auth === 'diluluskan' || $auth === 'lulus' || $auth === 'approved') {
+                                                        echo '<span class="badge bg-success">' . htmlspecialchars($authorization_status) . '</span>';
+                                                    } elseif ($auth === 'tidak dibenarkan' || $auth === 'tidakdibenarkan' || $auth === 'tidak' || $auth === 'rejected') {
+                                                        echo '<span class="badge bg-danger">' . htmlspecialchars($authorization_status) . '</span>';
+                                                    } elseif ($auth === 'pending' || $auth === 'menunggu') {
+                                                        echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($authorization_status) . '</span>';
+                                                    } else {
+                                                        echo '<span class="badge bg-secondary">' . htmlspecialchars($authorization_status) . '</span>';
+                                                    }
+                                                    ?>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -417,7 +445,20 @@ if (isset($_SESSION['user_id'])) {
                                                     <tr>
                                                         <td>Status Kelulusan</td>
                                                         <td>
-                                                            <?php echo ':&nbsp;&nbsp;' . $support_status; ?>
+                                                            <?php 
+                                                            echo ':&nbsp;&nbsp;';
+                                                            // Support status badge
+                                                            $ss = strtolower(trim($support_status));
+                                                            if ($ss === 'diluluskan' || $ss === 'lulus' || $ss === 'luluskan' || $ss === 'approved') {
+                                                                echo '<span class="badge bg-success">' . htmlspecialchars($support_status) . '</span>';
+                                                            } elseif ($ss === 'tidak diluluskan' || $ss === 'tidak_diluluskan' || $ss === 'tidakdiluluskan' || $ss === 'tidak' || $ss === 'rejected') {
+                                                                echo '<span class="badge bg-danger">' . htmlspecialchars($support_status) . '</span>';
+                                                            } elseif ($ss === 'pending' || $ss === 'menunggu') {
+                                                                echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($support_status) . '</span>';
+                                                            } else {
+                                                                echo '<span class="badge bg-secondary">' . htmlspecialchars($support_status) . '</span>';
+                                                            }
+                                                            ?>
                                                         </td>
                                                     </tr>
                                                     <tr>

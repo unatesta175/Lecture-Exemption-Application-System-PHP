@@ -72,8 +72,10 @@ if (isset($_POST['submit'])) {
         ?>
         <script>
             alert('ANDA BERJAYA SIMPAN MAKLUMAT PERMOHONAN ANDA!\nSeterusnya Klik Selesai untuk isi maklumat kelas anda bagi selesaikan proses permohonan anda!');
+            window.location.href = 'application_menu.php?submitted=1';
         </script>
         <?php
+        exit();
     } else {
         // Application start date is not at least 7 days greater than today's date
         ?>

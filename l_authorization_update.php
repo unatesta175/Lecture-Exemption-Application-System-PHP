@@ -299,7 +299,21 @@ if (isset($_POST['authorize'])) {
                                         <td>' . $course_code . '</td>
                                         <td>' . $group . '</td>	
                                         <td>' . $lecturer_name . '</td>
-                                        <td>' . $authorization_status . '</td>	
+                                        <td>';
+                                        
+                                        // Authorization status badge
+                                        $auth = strtolower(trim($authorization_status));
+                                        if ($auth === 'dibenarkan' || $auth === 'diluluskan' || $auth === 'lulus' || $auth === 'approved') {
+                                            echo '<span class="badge bg-success">' . htmlspecialchars($authorization_status) . '</span>';
+                                        } elseif ($auth === 'tidak dibenarkan' || $auth === 'tidakdibenarkan' || $auth === 'tidak' || $auth === 'rejected') {
+                                            echo '<span class="badge bg-danger">' . htmlspecialchars($authorization_status) . '</span>';
+                                        } elseif ($auth === 'pending' || $auth === 'menunggu') {
+                                            echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($authorization_status) . '</span>';
+                                        } else {
+                                            echo '<span class="badge bg-secondary">' . htmlspecialchars($authorization_status) . '</span>';
+                                        }
+                                        
+                                        echo '</td>	
                                         <td>' . $date_authorized . '</td>
 
                                         

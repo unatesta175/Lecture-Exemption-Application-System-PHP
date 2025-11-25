@@ -196,3 +196,4 @@ function sendLecturerEmail($lecturerEmail, $lecturerName, $subject, $message) {
 }
 ?>
 
+

@@ -287,10 +287,25 @@ if (isset($_SESSION['kpp_id'])) {
 
                                                     echo '</td>';
 
-                                                    echo '<td>' . $date_supported . '</td>
-                                                            <td>' . $application_stat . '</td> 	
- 
-                                                               <td>
+                                                    echo '<td>' . $date_supported . '</td>';
+                                                    
+                                                    echo '<td>';
+                                                    // Application status badge
+                                                    $app_stat = strtolower(trim($application_stat));
+                                                    if ($app_stat === 'diluluskan' || $app_stat === 'lulus' || $app_stat === 'approved' || $app_stat === 'selesai' || $app_stat === 'completed') {
+                                                        echo '<span class="badge bg-success">' . htmlspecialchars($application_stat) . '</span>';
+                                                    } elseif ($app_stat === 'tidak diluluskan' || $app_stat === 'tidak_diluluskan' || $app_stat === 'tidakdiluluskan' || $app_stat === 'ditolak' || $app_stat === 'rejected' || $app_stat === 'tidak') {
+                                                        echo '<span class="badge bg-danger">' . htmlspecialchars($application_stat) . '</span>';
+                                                    } elseif ($app_stat === 'pending' || $app_stat === 'menunggu' || $app_stat === 'dalam proses' || $app_stat === 'in process') {
+                                                        echo '<span class="badge bg-warning text-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                    } elseif ($app_stat === 'dalam semakan' || $app_stat === 'under review' || $app_stat === 'sedang disemak') {
+                                                        echo '<span class="badge bg-info text-dark">' . htmlspecialchars($application_stat) . '</span>';
+                                                    } else {
+                                                        echo '<span class="badge bg-secondary">' . htmlspecialchars($application_stat) . '</span>';
+                                                    }
+                                                    echo '</td>';
+                                                    
+                                                    echo '<td>
 
                                                        <div style="display: flex; justify-content: flex-start; flex-wrap: wrap;">
                                                        <a class=" option-btn text-light btn me-1 underline" href="kpp_support_view.php?application_id=' . $application_id . '" 
