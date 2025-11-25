@@ -12,12 +12,9 @@ if(!isset($admin_id)){
 
 if(isset($_POST['submit'])){
 
-   $name = $_POST['name'];
-   $name = filter_var($name, FILTER_SANITIZE_STRING);
-   $pass = sha1($_POST['pass']);
-   $pass = filter_var($pass, FILTER_SANITIZE_STRING);
-   $cpass = sha1($_POST['cpass']);
-   $cpass = filter_var($cpass, FILTER_SANITIZE_STRING);
+   $name = htmlspecialchars(strip_tags(trim($_POST['name'])), ENT_QUOTES, 'UTF-8');
+   $pass = sha1(htmlspecialchars(strip_tags(trim($_POST['pass'])), ENT_QUOTES, 'UTF-8'));
+   $cpass = sha1(htmlspecialchars(strip_tags(trim($_POST['cpass'])), ENT_QUOTES, 'UTF-8'));
 
    $select_admin = $conn->prepare("SELECT * FROM `admins` WHERE name = ?");
    $select_admin->execute([$name]);

@@ -1,0 +1,92 @@
+# ============================================
+# ELEAS - Environment Configuration Template
+# ============================================
+# 
+# SETUP INSTRUCTIONS:
+# 1. Copy this file to '.env'
+# 2. Update all values with your actual credentials
+# 3. NEVER commit .env to version control
+#
+# ============================================
+
+# ============================================
+# DATABASE CONFIGURATION
+# ============================================
+DB_HOST=localhost
+DB_NAME=eleas_v3
+DB_USER=root
+DB_PASSWORD=
+DB_CHARSET=utf8mb4
+
+# ============================================
+# EMAIL CONFIGURATION (SMTP)
+# ============================================
+# For Gmail: Enable 2FA and generate App Password
+# URL: https://support.google.com/accounts/answer/185833
+
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=your-email@gmail.com
+MAIL_PASSWORD=your-app-password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=your-email@gmail.com
+MAIL_FROM_NAME="ELEAS System"
+
+# Alternative SMTP Providers:
+# - Outlook: smtp.office365.com (Port: 587)
+# - Yahoo: smtp.mail.yahoo.com (Port: 587)
+# - SendGrid: smtp.sendgrid.net (Port: 587)
+
+# ============================================
+# APPLICATION CONFIGURATION
+# ============================================
+APP_NAME="ELEAS - E-Learning Exemption Application System"
+APP_URL=http://localhost/eleas.uitm.edu.my
+APP_ENV=development
+APP_DEBUG=true
+APP_TIMEZONE=Asia/Kuala_Lumpur
+
+# ============================================
+# SESSION CONFIGURATION
+# ============================================
+SESSION_LIFETIME=7200
+SESSION_SECURE=false
+SESSION_HTTPONLY=true
+
+# ============================================
+# FILE UPLOAD CONFIGURATION
+# ============================================
+MAX_UPLOAD_SIZE=5242880
+ALLOWED_FILE_TYPES=pdf,doc,docx,jpg,jpeg,png
+UPLOAD_PATH=supportDocfile/
+IMAGE_UPLOAD_PATH=uploaded_img/
+
+# ============================================
+# SECURITY CONFIGURATION
+# ============================================
+# Generate a random 32-character string for APP_KEY
+APP_KEY=
+HASH_ALGORITHM=bcrypt
+PASSWORD_MIN_LENGTH=8
+
+# ============================================
+# ADMIN CONFIGURATION
+# ============================================
+ADMIN_EMAIL=admin@uitm.edu.my
+ADMIN_NOTIFICATION_EMAIL=hea@uitm.edu.my
+
+# ============================================
+# DEVELOPMENT/DEBUGGING
+# ============================================
+# Set to false in production
+DISPLAY_ERRORS=true
+LOG_ERRORS=true
+ERROR_LOG_PATH=logs/error.log
+
+# ============================================
+# DATABASE BACKUP (Optional)
+# ============================================
+BACKUP_PATH=backups/
+AUTO_BACKUP=false
+BACKUP_RETENTION_DAYS=30
+

@@ -1,1 +1,0 @@
-letak obstart(); dekat awal2 skali untuk setipa page , baru takde masalah headers cannot be modified
