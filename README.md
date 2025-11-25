@@ -15,181 +15,79 @@
 
 ---
 
-## 📑 Quick Links
-
-- **🚀 [Quick Setup Guide](SETUP.md)** - Get started in 5 minutes
-- **🔐 [Environment Configuration](ENVIRONMENT_SETUP.md)** - Detailed `.env` setup
-- **📋 [Changelog](CHANGELOG.md)** - Recent updates and migration guide
-
----
-
-## 📖 Table of Contents
-
-- [🎯 Project Overview](#-project-overview)
-- [📚 Project Story](#-project-story)
-- [✨ Features](#-features)
-- [🏗️ System Architecture](#️-system-architecture)
-- [👥 User Roles](#-user-roles)
-- [🛠️ Technologies Used](#️-technologies-used)
-- [📋 Prerequisites](#-prerequisites)
-- [⚙️ Installation](#️-installation)
-- [🚀 Usage](#-usage)
-- [📊 Database Schema](#-database-schema)
-- [🎨 Design Documentation](#-design-documentation)
-- [📸 Screenshots](#-screenshots)
-- [🔒 Security Best Practices](#-security-best-practices)
-- [🔧 Troubleshooting](#-troubleshooting)
-- [👨‍💻 Development Team](#-development-team)
-- [🤝 Acknowledgments](#-acknowledgments)
-- [📝 License](#-license)
-
----
-
 ## 🎯 Project Overview
 
-**ELEAS (E-Learning Exemption Application System)** is a comprehensive web-based platform designed to streamline and digitize the process of managing class/lecture exemption applications at Universiti Teknologi MARA (UiTM). The system replaces the traditional paper-based workflow with an efficient, transparent, and traceable digital solution.
-
-### 🎓 Academic Context
-
-This system was developed as part of an **internship project** in collaboration with the **Academic Affairs Department (Hal Ehwal Akademik)** at UiTM, addressing the critical need for modernizing the student exemption request workflow.
+**ELEAS (E-Learning Exemption Application System)** is a web-based platform that digitizes the class/lecture exemption application process at Universiti Teknologi MARA (UiTM). Developed during an internship in collaboration with the **Academic Affairs Department (Hal Ehwal Akademik)**, this system replaces traditional paper-based workflows with an efficient, transparent digital solution.
 
 ### 🌟 Key Objectives
-
-- **Digitize** the exemption application process
-- **Streamline** multi-level approval workflows
-- **Enhance** transparency and accountability
-- **Reduce** processing time and paperwork
-- **Provide** real-time status tracking for all stakeholders
+- Digitize the exemption application process
+- Streamline multi-level approval workflows
+- Enhance transparency and real-time tracking
+- Reduce processing time and paperwork
 
 ---
 
 ## 📚 Project Story
 
-### 🚀 Genesis & Motivation
+### 🚀 The Beginning
 
-This project emerged from a genuine need identified within UiTM's Academic Affairs Department (Hal Ehwal Akademik). Students previously faced a cumbersome paper-based process to apply for class exemptions, involving multiple signatures, physical document routing, and often unclear status tracking. The system was envisioned to solve these pain points through digital transformation.
+This project emerged from a real need at UiTM's Academic Affairs Department. Students faced a cumbersome paper-based process for class exemptions involving multiple signatures, physical document routing, and unclear status tracking. ELEAS was created to solve these challenges through digital transformation.
 
-### 👥 The Team & Collaboration Model
+### 👥 Team & Collaboration
 
-The project was developed by a **two-person team** with clearly defined roles:
+The project was developed by a **two-person team** with specialized roles:
 
 #### **AHMAD MUSTA'IN Billah bin Mustafa** - Client Liaison & Requirements Specialist
-- 🗣️ Primary point of contact with Academic Affairs Department
+- 🗣️ Primary contact with Academic Affairs Department
 - 📊 Led sprint-by-sprint client collaboration sessions
 - 🤝 Conducted requirement elicitation meetings
-- ✅ Resolved requirement inconsistencies and ambiguities
-- 📞 Maintained continuous communication with stakeholders
+- 📞 Maintained continuous stakeholder communication
 
-#### **Project Developer (Repository Owner)** - Documentation Lead & Technical Architect
-- 📝 Translated elicited requirements into comprehensive technical documentation
-- 🎨 Single-handedly designed the complete system architecture and UI/UX
-- 💻 Solo implementation of entire codebase (4.5 months)
-- 📐 Created all technical diagrams and design blueprints
-- 🏗️ Developed combined SRS (Software Requirements Specification) and SDD (Software Design Document)
-
-### 🎯 Personal Challenge
-
-> *"I challenged myself to not only handle the complete code implementation but also take full ownership of the design phase. This meant creating a clear, comprehensive blueprint before writing a single line of code."*
-
-This self-imposed challenge ensured a well-thought-out architecture and reduced technical debt during development.
+#### **Muhammad Ilyas Bin Amran** - Lead Developer & System Analyst
+- 📝 Converted requirements into comprehensive technical documentation
+- 🎨 Single-handedly designed complete system architecture and UI/UX
+- 💻 Solo implementation of entire codebase (**4.5 months**)
+- 📐 Created all technical diagrams (Flowchart, Use Case, ERD, DFD)
+- 🏗️ Developed combined SRS and SDD documentation
 
 ### 📅 Development Timeline
 
-#### **Phase 1: Planning & Analysis** (Sprint-based)
-- **Approach**: Agile methodology with regular sprint meetings
-- **Activities**:
-  - 🤝 Active client collaboration with Academic Affairs Department
-  - 📋 Requirements gathering through iterative discussions
-  - 🔍 Analysis of existing paper-based workflow
-  - ✨ Identification of system features and constraints
-  - 📑 Documentation of functional and non-functional requirements
+**Total Duration**: ~4.5 months (135 days)
 
-#### **Phase 2: Design & Architecture** (Solo)
-- **Approach**: Comprehensive upfront design
-- **Deliverables Created**:
-  - 🔄 **Flowcharts**: System process flows for all user roles
-  - 👤 **Use Case Diagrams**: Actor interactions and system boundaries
-  - 🗃️ **Entity Relationship Diagram (ERD)**: Complete database schema
-  - 📊 **Data Flow Diagrams (DFD)**: Data movement through system layers
-  - 🎨 **UI/UX Mockups**: Interface designs for all modules
-
-#### **Phase 3: Implementation** (~4.5 Months - Solo)
-- **Timeline**: Approximately **135 days** of intensive development
-- **Approach**: Full-stack solo development
-- **Key Milestones**:
-  - ✅ Database design and implementation
-  - ✅ User authentication system (multi-role)
-  - ✅ Student application module
-  - ✅ Lecturer authorization module
-  - ✅ KPP support validation module
-  - ✅ TRHEA final approval module
-  - ✅ Admin management panel
-  - ✅ PDF report generation
-  - ✅ Email notification system
-  - ✅ Responsive UI implementation
-
-#### **Phase 4: Documentation**
-- **Deliverable**: Combined **SRS + SDD Report**
-- **Purpose**: Final internship submission demonstrating comprehensive system analysis, design, and implementation
-
-### 🏆 Achievements & Learning Outcomes
-
-- ✅ Successfully delivered a production-ready system used by real stakeholders
-- ✅ Mastered full-stack development independently
-- ✅ Gained deep understanding of agile requirements engineering
-- ✅ Developed strong documentation and technical writing skills
-- ✅ Learned to balance technical excellence with practical deadlines
-- ✅ Enhanced problem-solving through solo debugging and architecture decisions
-
-### 🎓 Academic Significance
-
-This project served as the **capstone deliverable** for the internship program, combining:
-- Software Requirements Specification (SRS)
-- Software Design Document (SDD)
-- Fully functional implementation
-- Real-world deployment and stakeholder satisfaction
+1. **Planning & Analysis** - Sprint-based agile methodology with Academic Affairs Department
+2. **Design Phase** - Created flowcharts, use case diagrams, ERD, DFD, and UI/UX mockups
+3. **Implementation** - Full-stack solo development of all features
+4. **Documentation** - Combined SRS + SDD report for final submission
 
 ---
 
 ## ✨ Features
 
 ### 🎓 Student Module
-- 📝 Submit new exemption applications
-- 📎 Attach supporting documents
-- 📋 Manage class/lecture information for each application
-- 👀 View application status in real-time
-- 📊 Track approval progress across all levels
-- 🖨️ Download/print approved application forms
-- 🔔 Receive email notifications for status updates
+- Submit exemption applications with supporting documents
+- Add class/lecture details for each application
+- Real-time status tracking across approval levels
+- Download/print approved forms as PDF
 
 ### 👨‍🏫 Lecturer Module
-- 📨 View pending authorization requests
-- ✅ Authorize or reject student applications
-- 💬 Provide comments/feedback
-- 📧 Automated email notifications
-- 📊 View authorization history
+- View and authorize pending student applications
+- Provide comments and feedback
+- Email notifications for new requests
 
 ### 👔 KPP (Program Coordinator) Module
-- 📋 Review authorized applications
-- ✔️ Provide support validation
-- 📝 Add remarks and recommendations
-- 🔍 Monitor program-level application statistics
-- 📧 Email notification system
+- Validate lecturer-authorized applications
+- Add program-level recommendations
+- Monitor application statistics
 
 ### 🏛️ TRHEA (Academic Affairs) Module
-- 🎯 Final approval authority
-- 📊 Comprehensive application overview
-- ✅ Approve or reject applications
-- 📈 Generate reports and analytics
-- 📧 Automated notification to all parties
+- Final approval authority
+- Comprehensive application overview and reports
+- Generate analytics
 
 ### 🛡️ Admin Module
-- 👥 User account management (Students, Lecturers, KPP, TRHEA)
-- 📚 Program management
-- 🔧 System configuration
-- 📊 Generate system-wide reports
-- 🔍 Search and filter applications
-- 🗑️ Data management
+- User account management (Students, Lecturers, KPP, TRHEA)
+- Program management
+- System-wide reports and configuration
 
 ### 🎨 General Features
 - 🔐 Secure role-based access control
@@ -197,558 +95,185 @@ This project served as the **capstone deliverable** for the internship program, 
 - 🌐 Bilingual support (English/Bahasa Malaysia)
 - 📧 Automated email notifications (PHPMailer)
 - 🖨️ PDF generation for official documents
-- 📊 DataTables integration for efficient data browsing
-- 🔍 Advanced search and filter functionality
-- 💾 Document upload and management
-- ⏱️ Timestamp tracking for all actions
-- 🔔 Real-time status updates
+- 📊 DataTables for efficient data browsing
 
 ---
 
 ## 🏗️ System Architecture
 
-### 📐 Architecture Pattern
-- **Type**: Model-View-Controller (MVC) influenced
-- **Frontend**: HTML5, CSS3, JavaScript, Bootstrap 5
-- **Backend**: PHP 7.4+
-- **Database**: MySQL (PDO for secure database access)
-- **Server**: Apache (XAMPP)
-
-### 🔄 Application Flow
-
+### Application Flow
 ```
-Student Application → Lecturer Authorization → KPP Support Validation → TRHEA Final Approval
-         ↓                      ↓                        ↓                        ↓
-    Email Notify          Email Notify             Email Notify             Email Notify
+Student Application → Lecturer Authorization → KPP Validation → TRHEA Approval
+         ↓                      ↓                      ↓                ↓
+    Email Notify          Email Notify          Email Notify     Email Notify
 ```
 
-### 🗂️ Directory Structure
-
-```
-eleas.uitm.edu.my/
-│
-├── admin/                      # Admin-specific modules (legacy)
-├── assets/                     # Static assets
-│   ├── css/                   # Stylesheets
-│   ├── img/                   # Images
-│   ├── js/                    # JavaScript files
-│   └── vendor/                # Third-party libraries
-│
-├── components/                 # Reusable PHP components
-│   ├── connect.php            # Database connection
-│   ├── user_header.php        # User navigation
-│   ├── admin_header.php       # Admin navigation
-│   ├── l_header.php           # Lecturer navigation
-│   ├── kpp_header.php         # KPP navigation
-│   ├── trhea_header.php       # TRHEA navigation
-│   └── *_logout.php           # Logout handlers
-│
-├── css/                        # Custom stylesheets
-├── js/                         # Custom JavaScript
-├── images/                     # Project images
-├── PHPMailer/                  # Email functionality
-├── supportDocfile/             # Uploaded supporting documents
-├── uploaded_img/               # User uploaded images
-│
-├── application_*.php           # Student application modules
-├── l_*.php                     # Lecturer modules
-├── kpp_*.php                   # KPP modules
-├── trhea_*.php                 # TRHEA modules
-├── admin_*.php                 # Admin modules
-├── userPDFprint.php           # PDF generation
-├── adminPDFprint.php          # Admin PDF generation
-├── eleas_v3.sql               # Database schema
-└── README.md                   # This file
-```
-
----
-
-## 👥 User Roles
-
-### 1️⃣ Student
-- Submit exemption applications
-- Manage class/lecture details
-- Track application status
-- Download approved forms
-
-### 2️⃣ Lecturer
-- Authorize student applications
-- Review class-specific exemption requests
-- Provide feedback/comments
-
-### 3️⃣ KPP (Ketua Program - Program Coordinator)
-- Validate lecturer-authorized applications
-- Provide program-level support
-- Add recommendations
-
-### 4️⃣ TRHEA (Timbalan Rektor Hal Ehwal Akademik - Deputy Rector Academic Affairs)
-- Final approval authority
-- Oversee all applications
-- Generate department-level reports
-
-### 5️⃣ Admin
-- Manage all user accounts
-- Configure system settings
-- Oversee entire system operation
+### User Roles
+1. **Student** - Submit and track applications
+2. **Lecturer** - Authorize class-specific requests
+3. **KPP (Program Coordinator)** - Validate and support applications
+4. **TRHEA (Academic Affairs)** - Final approval authority
+5. **Admin** - System management
 
 ---
 
 ## 🛠️ Technologies Used
 
-### 🎨 Frontend
-- **HTML5** - Structure
-- **CSS3** - Styling
-- **Bootstrap 5.3** - Responsive framework
-- **JavaScript (ES6)** - Client-side logic
-- **jQuery 3.6** - DOM manipulation
-- **Font Awesome 6.1** - Icons
-- **DataTables** - Advanced table features
-- **XLSX.js** - Excel export functionality
+### Frontend
+- HTML5, CSS3, JavaScript (ES6)
+- Bootstrap 5.3
+- jQuery 3.6
+- Font Awesome 6.1
+- DataTables
 
-### ⚙️ Backend
-- **PHP 7.4+** - Server-side scripting
-- **PDO** - Database abstraction layer
-- **Sessions** - User authentication
-- **PHPMailer** - Email functionality
+### Backend
+- PHP 7.4+
+- PDO (Database abstraction)
+- Sessions (Authentication)
+- PHPMailer (Email)
 
-### 🗄️ Database
-- **MySQL 5.7+** - Relational database
-- **InnoDB Engine** - Transaction support
+### Database
+- MySQL 5.7+
 
-### 🧰 Development Tools
-- **XAMPP** - Local development environment
-- **Visual Studio Code** - Code editor
-- **Git** - Version control
-- **Composer** - Dependency management (PHPMailer)
-
-### 📚 Libraries & Frameworks
-- **Bootstrap 5.3.0** - UI framework
-- **jQuery 3.6.0** - JavaScript library
-- **DataTables** - Table enhancement
-- **Font Awesome 6.1.1** - Icon library
-- **PHPMailer 6.x** - SMTP email sending
-- **TCPDF/FPDF** - PDF generation
-
-### 🔐 Configuration Management
-- **Environment Variables (.env)** - Secure credential storage
-- **Custom config loader** - `components/config.php`
-- **Centralized database connection** - `components/connect.php`
-- **Unified email configuration** - `PHPMailer/mail_config.php`
-
----
-
-## 📋 Prerequisites
-
-Before installing ELEAS, ensure you have the following:
-
-### System Requirements
-- ✅ **Operating System**: Windows 10/11, macOS, or Linux
-- ✅ **Web Server**: Apache 2.4+
-- ✅ **PHP**: Version 7.4 or higher
-- ✅ **MySQL**: Version 5.7 or higher
-- ✅ **Browser**: Modern browser (Chrome, Firefox, Edge, Safari)
-
-### Recommended Setup
-- 🟢 **XAMPP** (includes Apache, MySQL, PHP)
-- 🟢 **Composer** (for dependency management)
-- 🟢 **Git** (for version control)
+### Configuration
+- Environment Variables (.env)
+- Centralized config management
 
 ---
 
 ## ⚙️ Installation
 
-### 1️⃣ Clone the Repository
+### Prerequisites
+- XAMPP (Apache, MySQL, PHP 7.4+)
+- Composer (for PHPMailer)
+- Modern web browser
 
+### Quick Setup
+
+1. **Clone/Download Project**
 ```bash
-# Navigate to your web server directory
-cd C:\xampp\htdocs\  # Windows
-# or
-cd /opt/lampp/htdocs/  # Linux
-
-# Clone the repository
-git clone https://github.com/yourusername/eleas.uitm.edu.my.git
+cd C:\xampp\htdocs\
+git clone [your-repo-url] eleas.uitm.edu.my
 cd eleas.uitm.edu.my
 ```
 
-### 2️⃣ Install Dependencies
-
+2. **Create Environment File**
 ```bash
-# Navigate to PHPMailer directory
+# Windows
+copy env .env
+
+# The env file already contains your configuration!
+```
+
+3. **Install Dependencies**
+```bash
 cd PHPMailer
-
-# Install PHPMailer via Composer
 composer install
-
-# Return to project root
 cd ..
 ```
 
-### 3️⃣ Environment Configuration (IMPORTANT! ⚠️)
+4. **Setup Database**
+- Start XAMPP (Apache + MySQL)
+- Open phpMyAdmin: `http://localhost/phpmyadmin`
+- Create database: `eleas_v3`
+- Import file: `eleas_v3.sql`
 
-**ELEAS uses environment variables for all sensitive configuration.**
-
-#### Create `.env` File
-
-1. **Copy the template**:
-
-```bash
-# Windows
-copy env.example .env
-
-# Linux/macOS
-cp env.example .env
+5. **Access System**
+```
+http://localhost/eleas.uitm.edu.my
 ```
 
-2. **Edit `.env`** with your actual credentials:
+### Environment Configuration
 
-```bash
-# Database Configuration
-DB_HOST=localhost
-DB_NAME=eleas_v3
-DB_USER=root
-DB_PASSWORD=your_database_password
+Your `.env` file contains:
+- **Database**: localhost, eleas_v3, root (no password)
+- **Email**: Gmail SMTP with app password
+- **App Settings**: Development mode with debugging enabled
 
-# Email Configuration (SMTP)
-MAIL_HOST=smtp.gmail.com
-MAIL_PORT=587
-MAIL_USERNAME=your-email@gmail.com
-MAIL_PASSWORD=your-app-password
-MAIL_FROM_ADDRESS=your-email@gmail.com
-MAIL_FROM_NAME="ELEAS System"
-
-# Application Configuration
-APP_URL=http://localhost/eleas.uitm.edu.my
-APP_ENV=development
-APP_DEBUG=true
-```
-
-**🔒 Security Notes:**
-- ⚠️ **NEVER commit `.env` to version control** (it's in `.gitignore`)
-- 🔑 For Gmail: Enable 2FA and generate an [App Password](https://support.google.com/accounts/answer/185833)
-- 🔐 Use strong passwords for production environments
-- 🌐 Change `APP_ENV` to `production` and `APP_DEBUG` to `false` on live server
-
-### 4️⃣ Database Setup
-
-#### Import Database Schema
-
-1. **Start XAMPP** and ensure MySQL is running
-2. **Open phpMyAdmin**: `http://localhost/phpmyadmin`
-3. **Create a new database**: `eleas_v3`
-4. **Import the SQL file**:
-   - Click on the `eleas_v3` database
-   - Navigate to the `Import` tab
-   - Choose file: `eleas_v3.sql`
-   - Click `Go` to import
-
-Alternatively, use the command line:
-
-```bash
-mysql -u root -p
-CREATE DATABASE eleas_v3;
-USE eleas_v3;
-SOURCE C:\xampp\htdocs\eleas.uitm.edu.my\eleas_v3.sql;
-EXIT;
-```
-
-### 5️⃣ Verify Configuration
-
-The system automatically loads configuration from `.env` through:
-- `components/config.php` - Environment loader
-- `components/connect.php` - Database connection (reads from `.env`)
-- `PHPMailer/mail_config.php` - Email configuration (reads from `.env`)
-
-**Test your configuration**:
-1. ✅ Database connection: Try accessing any page
-2. ✅ Email: Try registering a new account (should send verification email)
-
-### 6️⃣ Configure Email for Gmail (Optional)
-
-If using Gmail for SMTP:
-
-1. **Enable 2-Factor Authentication** on your Google Account
-2. **Generate App Password**:
-   - Go to: https://myaccount.google.com/security
-   - Select "2-Step Verification"
-   - Scroll to "App passwords"
-   - Generate new app password for "Mail"
-3. **Update `.env`**:
-   ```
-   MAIL_USERNAME=your-email@gmail.com
-   MAIL_PASSWORD=generated-app-password
-   ```
-
-**Alternative Email Providers:**
-
-```bash
-# Outlook/Office 365
-MAIL_HOST=smtp.office365.com
-MAIL_PORT=587
-
-# Yahoo Mail
-MAIL_HOST=smtp.mail.yahoo.com
-MAIL_PORT=587
-
-# SendGrid
-MAIL_HOST=smtp.sendgrid.net
-MAIL_PORT=587
-```
-
-### 7️⃣ Set Folder Permissions
-
-Ensure upload directories are writable:
-
-```bash
-# Windows (via XAMPP Control Panel)
-# No specific action needed, usually works by default
-
-# Linux/macOS
-chmod -R 755 supportDocfile/
-chmod -R 755 uploaded_img/
-```
-
-### 8️⃣ Start the Server
-
-1. **Start XAMPP Control Panel**
-2. **Start Apache** and **MySQL** modules
-3. **Access the application**: `http://localhost/eleas.uitm.edu.my`
-
----
-
-## 🚀 Usage
-
-### 🎓 For Students
-
-1. **Register**: Navigate to `user_register.php`
-2. **Login**: Use credentials at `user_login.php`
-3. **Apply**: Click "Tambah Permohonan Baru" to create a new exemption application
-4. **Add Classes**: Add class/lecture details for your exemption
-5. **Track Status**: View real-time status updates on `application_menu.php`
-6. **Download**: Print approved applications via PDF
-
-### 👨‍🏫 For Lecturers
-
-1. **Register**: Navigate to `l_register.php`
-2. **Login**: Access `l_login.php`
-3. **View Requests**: Check pending authorization requests
-4. **Authorize**: Review and authorize/reject applications
-5. **Comments**: Provide feedback to students
-
-### 👔 For KPP (Program Coordinators)
-
-1. **Login**: Access `kpp_login.php`
-2. **Review**: View lecturer-authorized applications
-3. **Validate**: Provide support validation
-4. **Remarks**: Add program-level recommendations
-
-### 🏛️ For TRHEA (Academic Affairs)
-
-1. **Login**: Access `trhea_login.php`
-2. **Overview**: View all applications requiring final approval
-3. **Approve/Reject**: Make final decisions
-4. **Reports**: Generate departmental reports
-
-### 🛡️ For Administrators
-
-1. **Login**: Access `admin_login.php`
-2. **Manage Users**: Add/edit/delete user accounts
-3. **Manage Programs**: Configure academic programs
-4. **System Reports**: Generate comprehensive reports
-5. **Search**: Find specific applications or users
+**🔒 Security Note**: For production, change `APP_ENV=production` and `APP_DEBUG=false` in `.env`
 
 ---
 
 ## 📊 Database Schema
 
-### Key Tables
-
-#### 🎓 `students`
-- `student_id` (PK)
-- `student_no`
-- `name`
-- `email`
-- `password`
-- `program_id` (FK)
-- `semester`
-
-#### 📝 `applications`
-- `application_id` (PK)
-- `student_id` (FK)
-- `reason_exemption`
-- `datetime_application`
-- `authorization_status`
-- `support_status`
-- `application_stat`
-- `total_class`
-- `total_authorizer_signed`
-- `total_authorizer_needed`
-
-#### 📚 `classes`
-- `class_id` (PK)
-- `application_id` (FK)
-- `course_code`
-- `group`
-- `lecturer_id` (FK)
-- `authorization_status`
-- `date_authorized`
-
-#### 👨‍🏫 `lecturers`
-- `lecturer_id` (PK)
-- `lecturer_name`
-- `email`
-- `password`
-- `department`
-
-#### 👔 `kpp`
-- `kpp_id` (PK)
-- `kpp_name`
-- `email`
-- `password`
-- `program_id` (FK)
-
-#### 🏛️ `trhea`
-- `trhea_id` (PK)
-- `trhea_name`
-- `email`
-- `password`
-
-#### 🛡️ `admins`
-- `admin_id` (PK)
-- `admin_name`
-- `email`
-- `password`
-
-#### 📚 `programs`
-- `program_id` (PK)
-- `program_name`
-- `program_code`
-- `faculty`
-
-### Entity Relationships
-
-```
-students (1) ──── (M) applications (M) ──── (M) classes (M) ──── (1) lecturers
-    │                                                                  
-    └─── (M) programs (1) ──── (1) kpp
-```
+### Main Tables
+- `students` - Student information
+- `applications` - Exemption applications
+- `classes` - Class/lecture details per application
+- `lecturers` - Lecturer accounts
+- `kpp` - Program coordinator accounts
+- `trhea` - Academic affairs accounts
+- `admins` - Administrator accounts
+- `programs` - Academic programs
 
 ---
 
 ## 🎨 Design Documentation
 
-This project includes comprehensive design documentation created during the planning phase:
+This project includes comprehensive design documentation:
 
-### 📋 Documents Created
-
-1. **Software Requirements Specification (SRS)**
-   - Functional requirements
-   - Non-functional requirements
-   - User stories
-   - System constraints
-   - Acceptance criteria
-
-2. **Software Design Document (SDD)**
-   - System architecture
-   - Module descriptions
-   - Interface designs
-   - Database schema
-
-### 📐 Diagrams Developed
-
-#### 🔄 Flowcharts
-- Student application flow
-- Lecturer authorization flow
-- KPP validation flow
-- TRHEA approval flow
-- Admin management flow
-
-#### 👤 Use Case Diagram
-- Actors: Student, Lecturer, KPP, TRHEA, Admin
-- Use cases for each actor
-- System boundaries and interactions
-
-#### 🗃️ Entity Relationship Diagram (ERD)
-- Complete database schema
-- Entity relationships
-- Cardinality and constraints
-- Primary and foreign keys
-
-#### 📊 Data Flow Diagrams (DFD)
-- **Level 0**: Context diagram
-- **Level 1**: Major processes
-- **Level 2**: Detailed sub-processes
-- Data stores and external entities
+- **Flowcharts** - Process flows for all user roles
+- **Use Case Diagrams** - Actor interactions and system boundaries
+- **Entity Relationship Diagram (ERD)** - Complete database schema
+- **Data Flow Diagrams (DFD)** - Data movement through system layers
+- **Combined SRS + SDD** - Final report documentation
 
 ---
 
-## 📸 Screenshots
+## 🔧 Quick Troubleshooting
 
-### 🏠 Landing Page
-![Home Page](images/logoS.png)
-*The welcoming interface showcasing UiTM branding*
+### Database Connection Error?
+- Check MySQL is running in XAMPP
+- Verify database `eleas_v3` exists
+- Check `.env` has correct credentials
 
-### 🎓 Student Dashboard
-*Application management interface with real-time status tracking*
+### Email Not Sending?
+- Verify Gmail app password in `.env`
+- Check internet connection
+- Ensure port 587 is not blocked
 
-### 👨‍🏫 Lecturer Authorization Panel
-*Streamlined authorization workflow with detailed application views*
-
-### 📊 Admin Control Panel
-*Comprehensive system management and reporting tools*
-
-### 🖨️ PDF Report Generation
-*Professional application forms ready for official use*
+### Can't Login?
+- Clear browser cache/cookies
+- Verify account exists in database
 
 ---
 
 ## 👨‍💻 Development Team
 
-### Core Development Team
-
 <table>
 <tr>
-<td align="center">
-<strong>AHMAD MUSTA'IN Billah bin Mustafa</strong><br>
-<em>Client Liaison & Requirements Specialist</em><br><br>
-🗣️ Primary communicator with Academic Affairs Department<br>
-📊 Sprint facilitator and requirements elicitation lead<br>
-🤝 Stakeholder relationship management<br>
-✅ Requirements validation and consistency checks
+<td align="center" width="50%">
+<h3>Muhammad Ilyas Bin Amran</h3>
+<em>Lead Developer & System Analyst</em><br><br>
+📝 Requirements documentation<br>
+🎨 UI/UX design and architecture<br>
+💻 Full-stack implementation (4.5 months)<br>
+📐 Technical diagrams creator<br>
+📚 SRS + SDD documentation<br><br>
+💼 <a href="https://www.linkedin.com/in/muhammad-ilyas-bin-amran/">LinkedIn</a><br>
+💻 <a href="https://github.com/unatesta175">GitHub: unatesta175</a><br>
+📧 muhammadilyasamran@gmail.com<br>
+📱 +60 11-1104 7614
 </td>
-</tr>
-<tr>
-<td align="center">
-<strong>Project Developer</strong><br>
-<em>Technical Architect & Lead Developer</em><br><br>
-📝 Requirements documentation specialist<br>
-🎨 UI/UX designer and architect<br>
-💻 Full-stack solo implementation (4.5 months)<br>
-📐 Created all technical diagrams (Flowchart, Use Case, ERD, DFD)<br>
-📚 Combined SRS + SDD documentation author
+<td align="center" width="50%">
+<h3>AHMAD MUSTA'IN Billah bin Mustafa</h3>
+<em>Client Liaison & Requirements Specialist</em><br><br>
+🗣️ Primary client communicator<br>
+📊 Sprint facilitator<br>
+🤝 Stakeholder relationship management<br>
+✅ Requirements validation<br><br>
+<em>Collaborated with Academic Affairs Department (Hal Ehwal Akademik) throughout the project</em>
 </td>
 </tr>
 </table>
 
 ### Collaboration Model
 
-Our team operated under a **specialized dual-role model**:
+Our **specialized dual-role model**:
+- **External Collaboration** (Mustain): Client-facing activities, requirement gathering
+- **Internal Transformation** (Ilyas): Technical specifications and implementation
 
-- **External Collaboration** (Mustain): Client-facing activities, requirement gathering, sprint meetings
-- **Internal Transformation** (Developer): Converting business needs into technical specifications and code
-
-This division of labor allowed for:
-- ✅ **Focused expertise** in respective domains
-- ✅ **Efficient workflow** without role overlap
-- ✅ **Quality deliverables** from specialized attention
-- ✅ **Clear accountability** for each phase
-
-### Development Methodology
-
-- **Approach**: Agile with sprint-based planning
-- **Duration**: ~4.5 months (135 days)
-- **Code**: Solo implementation
-- **Design**: Solo architecture and UI/UX
-- **Communication**: Collaborative requirement gathering
+**Development**: Agile with sprint-based planning | ~4.5 months (135 days)
 
 ---
 
@@ -757,29 +282,16 @@ This division of labor allowed for:
 ### 🏛️ Institutional Support
 
 **Universiti Teknologi MARA (UiTM)**
-- For providing the opportunity to develop this impactful system
-- For facilitating internship program and mentorship
+- For the internship opportunity and mentorship
 
 **Academic Affairs Department (Hal Ehwal Akademik)**
-- For their continuous collaboration throughout the project
-- For providing domain expertise and realistic requirements
-- For their patience during iterative requirement refinement
+- For continuous collaboration and domain expertise
+- For patience during iterative requirement refinement
 
 ### 👨‍🏫 Special Thanks
-
-- **Academic Supervisors**: For guidance and technical mentorship
-- **Industry Supervisor**: For project management insights
-- **Department Staff**: For their willingness to test and provide feedback
-- **Fellow Interns**: For moral support during intensive development phases
-
-### 💡 Inspiration & Learning
-
-This project was inspired by the need to modernize academic administrative processes and reduce bureaucratic friction. It represents:
-
-- 📚 Months of dedicated learning and skill development
-- 🎯 A commitment to solving real-world problems through technology
-- 💪 Personal growth through challenging oneself beyond comfort zones
-- 🏆 The intersection of academic theory and practical implementation
+- Academic supervisors for technical guidance
+- Department staff for testing and feedback
+- UiTM for facilitating this impactful project
 
 ---
 
@@ -787,281 +299,39 @@ This project was inspired by the need to modernize academic administrative proce
 
 This project was developed as part of an **internship program** at Universiti Teknologi MARA (UiTM).
 
-### Usage Rights
+- ✅ **Academic Use**: Free for educational purposes
+- ✅ **UiTM Use**: Fully authorized for deployment by UiTM
+- ⚠️ **Commercial Use**: Requires permission from development team and UiTM
 
-- ✅ **Academic Use**: Free for educational and research purposes
-- ✅ **UiTM Use**: Fully authorized for deployment and modification by UiTM
-- ⚠️ **Commercial Use**: Requires explicit permission from the development team and UiTM
-
-### Disclaimer
-
-This software is provided "as is", without warranty of any kind. The development team and UiTM shall not be liable for any claims, damages, or other liabilities arising from the use of this software.
-
----
-
-## 🔒 Security Best Practices
-
-### 🛡️ Environment Configuration
-
-#### For Development:
-```bash
-APP_ENV=development
-APP_DEBUG=true
-DISPLAY_ERRORS=true
-```
-
-#### For Production:
-```bash
-APP_ENV=production
-APP_DEBUG=false
-DISPLAY_ERRORS=false
-LOG_ERRORS=true
-```
-
-### 🔐 Password Security
-
-1. **Use Strong Passwords**:
-   - Minimum 8 characters
-   - Mix of uppercase, lowercase, numbers, and symbols
-   - Use different passwords for different accounts
-
-2. **Database User**:
-   ```bash
-   # Production: Create dedicated database user (not root)
-   CREATE USER 'eleas_user'@'localhost' IDENTIFIED BY 'strong_password_here';
-   GRANT ALL PRIVILEGES ON eleas_v3.* TO 'eleas_user'@'localhost';
-   FLUSH PRIVILEGES;
-   ```
-
-3. **Update `.env`**:
-   ```bash
-   DB_USER=eleas_user
-   DB_PASSWORD=strong_password_here
-   ```
-
-### 📧 Email Security
-
-1. **Never use your main password** - Use App Passwords
-2. **Gmail Setup**:
-   - Enable 2-Factor Authentication
-   - Generate App Password specifically for ELEAS
-3. **Revoke access** if credentials are compromised
-
-### 🔒 File Permissions
-
-#### Linux/macOS Production:
-```bash
-# Application files (read-only for web server)
-chmod -R 755 /path/to/eleas.uitm.edu.my/
-
-# Upload directories (writable)
-chmod -R 775 supportDocfile/ uploaded_img/
-chown -R www-data:www-data supportDocfile/ uploaded_img/
-
-# Environment file (restrict access)
-chmod 600 .env
-chown www-data:www-data .env
-
-# Prevent .env from being served
-# Add to Apache .htaccess or nginx config
-```
-
-#### Apache `.htaccess` Protection:
-```apache
-# Deny access to sensitive files
-<FilesMatch "^\.env">
-    Order allow,deny
-    Deny from all
-</FilesMatch>
-
-<FilesMatch "\.(sql|log|ini)$">
-    Order allow,deny
-    Deny from all
-</FilesMatch>
-```
-
-### 🌐 Production Deployment Checklist
-
-Before deploying to production:
-
-- [ ] ✅ Set `APP_ENV=production` in `.env`
-- [ ] ✅ Set `APP_DEBUG=false` in `.env`
-- [ ] ✅ Set `DISPLAY_ERRORS=false` in `.env`
-- [ ] ✅ Use strong database password
-- [ ] ✅ Create dedicated database user (not root)
-- [ ] ✅ Enable HTTPS/SSL
-- [ ] ✅ Update `APP_URL` to production domain
-- [ ] ✅ Configure firewall rules
-- [ ] ✅ Set up automated backups
-- [ ] ✅ Restrict file permissions
-- [ ] ✅ Disable directory listing
-- [ ] ✅ Keep PHP and libraries updated
-- [ ] ✅ Monitor error logs regularly
-- [ ] ✅ Implement rate limiting
-- [ ] ✅ Configure CORS if needed
-
-### 🔄 Regular Maintenance
-
-1. **Backup Database** - Weekly or daily
-   ```bash
-   mysqldump -u root -p eleas_v3 > backup_$(date +%Y%m%d).sql
-   ```
-
-2. **Update Dependencies**:
-   ```bash
-   cd PHPMailer
-   composer update
-   ```
-
-3. **Review Logs**:
-   - Check `logs/error.log`
-   - Monitor failed login attempts
-   - Review file upload activity
-
-4. **Security Updates**:
-   - Keep PHP updated
-   - Update XAMPP/Apache/MySQL
-   - Monitor security advisories
-
-### 🚨 Incident Response
-
-If credentials are compromised:
-
-1. **Immediately change passwords** in `.env`
-2. **Revoke email app passwords** and generate new ones
-3. **Check logs** for suspicious activity
-4. **Notify stakeholders** if data breach is suspected
-5. **Review and update** access controls
-
----
-
-## 🔧 Troubleshooting
-
-### Common Issues and Solutions
-
-#### ❌ Error: ".env file not found"
-**Solution:**
-```bash
-# Copy the template file
-copy env.example .env
-# Then edit .env with your configuration
-```
-
-#### ❌ Database Connection Failed
-**Check:**
-1. ✅ MySQL service is running in XAMPP
-2. ✅ Database name in `.env` matches your database: `DB_NAME=eleas_v3`
-3. ✅ Username and password are correct in `.env`
-4. ✅ Database has been imported from `eleas_v3.sql`
-
-**Solution:**
-```bash
-# Verify database exists
-mysql -u root -p -e "SHOW DATABASES LIKE 'eleas_v3';"
-```
-
-#### ❌ Email Not Sending
-**Check:**
-1. ✅ SMTP credentials are correct in `.env`
-2. ✅ For Gmail: App Password is generated (not regular password)
-3. ✅ Internet connection is active
-4. ✅ Port 587 is not blocked by firewall
-
-**Test SMTP Connection:**
-```php
-// Create test_email.php
-<?php
-require_once 'PHPMailer/mail_config.php';
-$result = sendEmail('test@example.com', 'Test', 'Test message');
-echo $result ? 'Success!' : 'Failed!';
-?>
-```
-
-#### ❌ File Upload Not Working
-**Check:**
-1. ✅ Upload directories exist and are writable:
-   - `supportDocfile/`
-   - `uploaded_img/`
-2. ✅ PHP upload settings in `php.ini`:
-   ```ini
-   upload_max_filesize = 10M
-   post_max_size = 10M
-   ```
-
-**Solution:**
-```bash
-# Create directories if missing
-mkdir supportDocfile uploaded_img
-```
-
-#### ❌ Session Issues / Can't Login
-**Check:**
-1. ✅ PHP sessions are enabled
-2. ✅ Session directory is writable
-3. ✅ Clear browser cookies and cache
-
-**Solution:**
-```php
-// Check session configuration
-<?php
-echo session_save_path();
-echo ini_get('session.save_handler');
-?>
-```
-
-#### ❌ Permission Denied Errors
-**Windows (XAMPP):**
-- Usually no action needed
-- Ensure XAMPP is not in Program Files (use C:\xampp)
-
-**Linux/macOS:**
-```bash
-# Set proper permissions
-sudo chmod -R 755 /opt/lampp/htdocs/eleas.uitm.edu.my
-sudo chown -R nobody:nogroup supportDocfile/ uploaded_img/
-```
-
-### Debug Mode
-
-Enable detailed error reporting by editing `.env`:
-
-```bash
-APP_DEBUG=true
-DISPLAY_ERRORS=true
-LOG_ERRORS=true
-```
-
-**⚠️ Important:** Set `APP_DEBUG=false` in production!
-
-### Getting Help
-
-1. **Check error logs**: `logs/error.log`
-2. **PHP error log**: Look in XAMPP control panel → Logs
-3. **Browser console**: Press F12 to check JavaScript errors
-4. **Database logs**: Check MySQL error log in XAMPP
+**Disclaimer**: This software is provided "as is", without warranty of any kind.
 
 ---
 
 ## 📞 Contact & Support
 
-### For Technical Issues
-- **Email**: [your-email@student.uitm.edu.my]
-- **GitHub Issues**: [Repository Issues Page]
+### 👨‍💻 Lead Developer
 
-### For Academic/Official Inquiries
-- **Department**: Academic Affairs Department (Hal Ehwal Akademik)
-- **Institution**: Universiti Teknologi MARA (UiTM)
+**Muhammad Ilyas Bin Amran** - Lead Developer & System Analyst
 
-### Project Repository
-- **GitHub**: [https://github.com/yourusername/eleas.uitm.edu.my]
+For questions, suggestions, or collaboration opportunities:
+
+- 💼 **LinkedIn**: [Muhammad Ilyas Bin Amran](https://www.linkedin.com/in/muhammad-ilyas-bin-amran/)
+- 💻 **GitHub**: [unatesta175](https://github.com/unatesta175)
+- 📧 **Email**: muhammadilyasamran@gmail.com
+- 📱 **WhatsApp**: +60 11-1104 7614
+
+### 🏛️ For Academic/Official Inquiries
+
+**Department**: Academic Affairs Department (Hal Ehwal Akademik)  
+**Institution**: Universiti Teknologi MARA (UiTM)
 
 ---
 
 ## 🎓 Final Note
 
-This project represents **4.5 months of intensive development**, countless hours of debugging, learning new technologies, and pushing personal boundaries. It's more than just code—it's a testament to what dedicated individuals can achieve when given the opportunity to solve real problems.
+This project represents **4.5 months of intensive development**, countless hours of learning, and pushing personal boundaries. It's more than code—it's a testament to what dedicated individuals can achieve when solving real problems.
 
-> *"The best way to predict the future is to implement it."* - This project embodies that philosophy.
+> *"The best way to predict the future is to implement it."*
 
 **Thank you for exploring ELEAS!** 🚀
 
