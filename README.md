@@ -37,11 +37,7 @@ This project emerged from a real need at UiTM's Academic Affairs Department. Stu
 
 The project was developed by a **two-person team** with specialized roles:
 
-#### **AHMAD MUSTA'IN Billah bin Mustafa** - Client Liaison & Requirements Specialist
-- 🗣️ Primary contact with Academic Affairs Department
-- 📊 Led sprint-by-sprint client collaboration sessions
-- 🤝 Conducted requirement elicitation meetings
-- 📞 Maintained continuous stakeholder communication
+
 
 #### **Muhammad Ilyas Bin Amran** - Lead Developer & System Analyst
 - 📝 Converted requirements into comprehensive technical documentation
@@ -49,6 +45,12 @@ The project was developed by a **two-person team** with specialized roles:
 - 💻 Solo implementation of entire codebase (**4.5 months**)
 - 📐 Created all technical diagrams (Flowchart, Use Case, ERD, DFD)
 - 🏗️ Developed combined SRS and SDD documentation
+
+#### **Ahmad Musta'in Billah bin Mustafa** - Client Liaison & Requirements Specialist
+- 🗣️ Primary contact with Academic Affairs Department
+- 📊 Led sprint-by-sprint client collaboration sessions
+- 🤝 Conducted requirement elicitation meetings
+- 📞 Maintained continuous stakeholder communication
 
 ### 📅 Development Timeline
 
@@ -256,7 +258,7 @@ This project includes comprehensive design documentation:
 📱 +60 11-1104 7614
 </td>
 <td align="center" width="50%">
-<h3>AHMAD MUSTA'IN Billah bin Mustafa</h3>
+<h3>Ahmad Musta'in Billah bin Mustafa</h3>
 <em>Client Liaison & Requirements Specialist</em><br><br>
 🗣️ Primary client communicator<br>
 📊 Sprint facilitator<br>
@@ -270,8 +272,9 @@ This project includes comprehensive design documentation:
 ### Collaboration Model
 
 Our **specialized dual-role model**:
-- **External Collaboration** (Mustain): Client-facing activities, requirement gathering
 - **Internal Transformation** (Ilyas): Technical specifications and implementation
+- **External Collaboration** (Mustain): Client-facing activities, requirement gathering
+
 
 **Development**: Agile with sprint-based planning | ~4.5 months (135 days)
 
