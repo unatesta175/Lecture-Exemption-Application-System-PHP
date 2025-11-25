@@ -19,6 +19,10 @@
 
 **ELEAS (E-Learning Exemption Application System)** is a web-based platform that digitizes the class/lecture exemption application process at Universiti Teknologi MARA (UiTM). Developed during an internship in collaboration with the **Academic Affairs Department (Hal Ehwal Akademik)**, this system replaces traditional paper-based workflows with an efficient, transparent digital solution.
 
+### ⚠️ Important Note
+
+**This project is locally hosted only and was never deployed or used by UiTM Johor Academic Affairs Department.** After completing the development and documentation, the system was not adopted for production use. As a result, this project has been open-sourced to share the work and allow others to learn from or build upon it.
+
 ### 🌟 Key Objectives
 - Digitize the exemption application process
 - Streamline multi-level approval workflows
@@ -145,8 +149,10 @@ Student Application → Lecturer Authorization → KPP Validation → TRHEA Appr
 
 ## ⚙️ Installation
 
+**Note**: This project is designed for **local development and testing only**. It was never deployed to production and is provided as-is for educational purposes.
+
 ### 📋 Prerequisites
-- XAMPP (Apache, MySQL, PHP 7.4+)
+- XAMPP (Apache, MySQL, PHP 7.4+) - For local hosting
 - Composer (for PHPMailer)
 - Modern web browser
 
@@ -302,13 +308,14 @@ Our **specialized dual-role model**:
 
 ### 📄 Usage Rights
 
-This project was developed as part of an **internship program** at Universiti Teknologi MARA (UiTM).
+This project was developed as part of an **internship program** at Universiti Teknologi MARA (UiTM). However, **it was never deployed or used in production by UiTM Johor Academic Affairs Department**, which is why it has been open-sourced.
 
-- **Academic Use**: Free for educational purposes
-- **UiTM Use**: Fully authorized for deployment by UiTM
-- **Commercial Use**: Requires permission from development team and UiTM
+- **Open Source**: This project is open-sourced for educational and learning purposes
+- **Academic Use**: Free for educational and research purposes
+- **Commercial Use**: Use at your own discretion
+- **Modification**: Feel free to fork, modify, and improve
 
-**Disclaimer**: This software is provided "as is", without warranty of any kind.
+**Disclaimer**: This software is provided "as is", without warranty of any kind. The developer and UiTM are not responsible for any issues arising from the use of this software.
 
 ---
 
@@ -344,12 +351,8 @@ This project represents **4.5 months of intensive development**, countless hours
 
 <div align="center">
 
-**Developed with ❤️ for UiTM Academic Community**
+**Developed by Muhammad Ilyas Bin Amran**
 
-
-
-**© 2024 ELEAS Development Team | Universiti Teknologi MARA**
-
-*Empowering academic administration through technology*
+*Open-sourced project - Locally hosted only, never deployed to production*
 
 </div>

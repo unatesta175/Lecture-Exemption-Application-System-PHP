@@ -52,11 +52,7 @@
 
    </section>
 <br>
-   <div class="credit">&copy; Copyright Universiti Teknologi Mara Cawangan Johor
-      <?= date('Y'); ?> | <a href="https://uitm.edu.my/index.php/disclaimer-copyright" class="underline">Disclaimer
-         &amp; Copyright</a> | <a href="https://uitm.edu.my/index.php/privacy-statement" class="underline">Privacy
-         Statement </a>| <a href="https://ppii.uitm.edu.my/images/pekeliling/universiti/Dasar/DasarKeselamatanICTv2.pdf"
-         class="underline" target="_blank" rel="noopener noreferrer">ICT Security Policy</a></p>
+   <div class="credit">Developed by Muhammad Ilyas Bin Amran</p>
    </div>
 
 </footer>
