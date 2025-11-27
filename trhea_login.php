@@ -109,6 +109,26 @@ if (isset($_POST['submit'])) {
             <p>Anda tidak memiliki akaun?</p>
             <a style="border-radius:15px; text-transform:uppercase;" href="trhea_register.php"
                 class="underline option-btn">Daftar</a>
+            <select name="category" class="box" style="display: flex;flex-direction: row; margin-top: 15px;" onchange="redirectToLoginPage(this.value)">
+                <option value="">Tukar kategori pengguna anda</option>
+                <option value="student">Pelajar</option>
+                <option value="lecturer">Pensyarah</option>
+                <option value="kpp">Ketua Pusat Pengajian</option>
+                <option value="admin">Admin</option>
+            </select>
+            <script>
+                function redirectToLoginPage(category) {
+                    if (category === "lecturer") {
+                        window.location.href = "l_login.php";
+                    } else if (category === "kpp") {
+                        window.location.href = "kpp_login.php";
+                    } else if (category === "student") {
+                        window.location.href = "user_login.php";
+                    } else if (category === "admin") {
+                        window.location.href = "admin_login.php";
+                    }
+                }
+            </script>
         </form>
 
     </section>

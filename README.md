@@ -29,6 +29,14 @@
 - Enhance transparency and real-time tracking
 - Reduce processing time and paperwork
 
+### 🎥 Video Demonstration
+
+Watch the complete system demo on YouTube:
+
+[![ELEAS System Demo](https://img.shields.io/badge/YouTube-Watch%20Demo-red?style=for-the-badge&logo=youtube)](https://youtu.be/4f518hi_bq0)
+
+**Direct Link**: [https://youtu.be/4f518hi_bq0](https://youtu.be/4f518hi_bq0)
+
 ---
 
 ## 📚 Project Story

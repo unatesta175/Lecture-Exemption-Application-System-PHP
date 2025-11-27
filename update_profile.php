@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
    $phoneno = $_POST['phoneno'];
 
 
-   $update = $conn->prepare("UPDATE `students` SET name = ?, email = ?,ic = ?, student_no = ?, program_id = ? ,faculty_id = ? , semester= ? , phone_no= ? , home_phone_no= ?WHERE student_id = ?");
+   $update = $conn->prepare("UPDATE `students` SET name = ?, email = ?,ic = ?, student_no = ?, program_id = ? ,faculty_id = ? , semester= ? , phone_no= ? , home_phone_no= ? WHERE student_id = ?");
    $update->execute([$name,$email, $ic, $studno, $program_id, $faculty_id, $part, $phoneno, $homephoneno, $user_id]);
 
 

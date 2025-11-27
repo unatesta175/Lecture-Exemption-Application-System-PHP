@@ -116,6 +116,7 @@ if (isset($_POST['submit'])) {
   <option value="student">Pelajar</option>
   <option value="lecturer">Pensyarah</option>
   <option value="kpp">Ketua Pusat Pengajian</option>
+  <option value="admin">Admin</option>
 </select>
  <script>
   function redirectToLoginPage(category) {
@@ -125,6 +126,8 @@ if (isset($_POST['submit'])) {
       window.location.href = "kpp_login.php";
     } else if (category === "student") {
       window.location.href = "user_login.php";
+    } else if (category === "admin") {
+      window.location.href = "admin_login.php";
     }
   }
 </script>
